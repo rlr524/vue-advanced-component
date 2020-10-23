@@ -1,20 +1,12 @@
 <template>
   <div>
-    <h3>This is a great quote</h3>
-    <p>{{ quote }}</p>
-    <slot></slot>
+    <h3>The quote author</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Quote",
-  props: {
-    quote: {
-      type: String,
-      required: false
-    }
-  }
+  name: "Author"
 };
 </script>
 
@@ -25,13 +17,5 @@ div {
   padding: 30px;
   margin: 30px auto;
   text-align: center;
-}
-
-h1 {
-  color: green;
-}
-
-h2 {
-  color: red;
 }
 </style>
